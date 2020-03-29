@@ -48,6 +48,7 @@
              ]
             }
        $.each(obj.song, function(i, f) {
+           document.write(f.title)
           var tblRow = "<tr>" + "<td>" + f.title + "</td>" +
            "<td>" + f.artist + "</td>" + "<td>" + f.genre + "</td>" + "<td>" + f.year_released + "</td>" + "</tr>"
            $(tblRow).appendTo("#data tbody");
